@@ -1,0 +1,55 @@
+.header-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.57px;
+  text-align: center; }
+
+.header-description {
+  text-align: center;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.06px;
+  max-width: 600px;
+  margin: 0 auto; }
+  .header-description p {
+    margin-top: 0px;
+    margin-bottom: 15px; }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 200px;
+  align-items: center; }
+
+@media (min-width: 620px) {
+  .header-title {
+    font-size: 35px; }
+  .header-content {
+    padding-top: 200px; } }
+
+@media (min-width: 1200px) {
+  .header-wrapper {
+    width: 1200px;
+    padding-left: 0px;
+    padding-right: 0px; }
+  .header-title {
+    font-size: 70px; }
+  .header-content {
+    padding-top: 200px;
+    flex-direction: row;
+    align-items: flex-start; }
+  .header-description {
+    font-size: 16px; } }

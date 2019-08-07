@@ -1,0 +1,37 @@
+.nav-wrapper
+    width: 100%
+    margin: 0 auto
+    margin-top: 39px
+    display: flex
+    justify-content: center
+    align-items: baseline
+    margin-bottom: 150px
+    padding-left: 15px
+    padding-right: 15px
+.nav
+    display: none
+    font-size: 15px
+    text-transform: uppercase
+    font-weight: 500
+    letter-spacing: 0.3px
+
+.nav__item
+    color: #aaaaaa
+    margin-left: 70px
+    text-decoration: none
+    &:hover,&--active
+        color: #333
+        text-decoration: none
+        font-weight: 500
+    &:first-child
+        margin-left: 0px
+
+// Media require
+@media (min-width: 620px)
+    .nav
+        display: block
+    .nav-wrapper
+        justify-content: space-between
+@media (min-width: 1200px)
+    .nav-wrapper
+        width: 1200px

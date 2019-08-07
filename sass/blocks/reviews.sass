@@ -1,0 +1,47 @@
+.reviews
+    width: 276px
+    margin-right: 4px
+    order: 2
+    margin-top: 50px
+    &__title
+        color: #000000
+        font-family: 'Playfair Display', serif
+        font-size: 36px
+        font-weight: 400
+        line-height: 1.9
+        letter-spacing: 0.29px
+        margin-bottom: 45px
+        text-align: center
+.review-item__text
+    color: #999999
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.9
+    
+.review-item__author
+    color: #000000
+    font-size: 16px
+    font-weight: 700
+    line-height: 1.9
+    margin: 15px 0
+.review-item
+    margin-bottom: 30px
+    border-bottom: 1px solid  #e7e7e7
+    position: relative
+    &:before
+        content: ""
+        display: block
+        width: 36px
+        height: 29px
+        position: absolute
+        top: 0
+        left: -18px
+        z-index: -1
+        background: url("/images/before-element.png") no-repeat center
+// Media require
+@media (min-width: 1200px)
+    .reviews
+        order: 0
+        margin-top: 0px
+    .review-item__title
+        text-align: left
